@@ -1,0 +1,54 @@
+### Вывод всех сотрудников
+GET http://localhost:8080/employee
+
+
+### Ввод 1 сотрудника
+POST http://localhost:8080/employee
+Content-Type: application/json
+
+{"firstName":"Александр","lastName":"Иванов","departament":1,"salary":50000}
+
+
+### Ввод 2 сотрудника
+POST http://localhost:8080/employee
+Content-Type: application/json
+
+{"firstName":"Дмитрий","lastName":"Ползунов","departament":1,"salary":55000}
+
+
+### Ввод 3 сотрудника
+POST http://localhost:8080/employee
+Content-Type: application/json
+
+{"firstName":"Екатерина","lastName":"Нарышкина","departament":1,"salary":65000}
+
+
+### Ввод 4 сотрудника
+POST http://localhost:8080/employee
+Content-Type: application/json
+
+{"firstName":"Константин","lastName":"Ряб","departament":1,"salary":45000}
+
+
+### Ввод 5 сотрудника
+POST http://localhost:8080/employee
+Content-Type: application/json
+
+{"firstName":"Владислав","lastName":"Коршун","departament":1,"salary":45000}
+
+
+### Получение суммы зарплат всех сотрудников
+GET http://localhost:8080/employee/salary/sum
+
+
+### Получение минимальной зарплаты сотрудника
+GET http://localhost:8080/employee/salary/min
+
+
+### Получение максимальной зарплаты сотрудника
+GET http://localhost:8080/employee/salary/max
+
+
+### Получение сотрудников с зарплатой выше средней
+GET http://localhost:8080//employee/salary/aboveaverage
+
